@@ -2,6 +2,10 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: db-keys
+  annotations:
+    "helm.sh/hook": pre-install
+    "helm.sh/hook-weight": "1"
+
 type: Opaque
 data:
   user: bWFuaWRldmFzYW5p

@@ -17,7 +17,6 @@ spec:
           serviceName: chatapp-lb
           servicePort: 80
   tls:
-   - secretName: keys-tls
+   - secretName: chatapp-tls
      hosts:
         - chatapp.devmani.ml
-     
